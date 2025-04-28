@@ -1,0 +1,6 @@
+[submodule "TrivialAPI"]
+	path = Submodules/TrivialAPI
+	url = https://github.com/Fleuronic/TrivialAPI
+[submodule "TrivialService"]
+	path = Submodules/TrivialService
+	url = https://github.com/Fleuronic/TrivialService
