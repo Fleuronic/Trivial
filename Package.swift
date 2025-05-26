@@ -15,15 +15,11 @@ let package = Package(
 			targets: ["Trivial"]
 		),
 	],
-	dependencies: [
-		.package(url: "https://github.com/gohanlon/swift-memberwise-init-macro", from: "0.5.0"),
-	],
+	dependencies: [.package(url: "https://github.com/gohanlon/swift-memberwise-init-macro", from: "0.5.0"),],
 	targets: [
 		.target(
 			name: "Trivial",
-			dependencies: [
-				.product(name: "MemberwiseInit", package: "swift-memberwise-init-macro"),
-			]
+			dependencies: [.product(name: "MemberwiseInit", package: "swift-memberwise-init-macro")]
 		)
 	],
 	swiftLanguageModes: [.v6]
