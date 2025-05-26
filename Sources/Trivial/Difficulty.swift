@@ -1,9 +1,4 @@
-//
-//  File.swift
-//  Trivial
-//
-//  Created by Kay, Jordan (He/Him/His) on 5/2/25.
-//
+// Copyright © Fleuronic LLC. All rights reserved.
 
 public extension Question {
     enum Difficulty: Equatable, Sendable {
