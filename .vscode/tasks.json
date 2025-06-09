@@ -2,52 +2,19 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"type": "swift",
-			"args": [
-				"build",
-				"--build-tests",
-				"-Xswiftc",
-				"-diagnostic-style=swift"
+			"type": "sweetpad",
+			"action": "build",
+			"problemMatcher": [
+				"$sweetpad-watch",
+				"$sweetpad-xcodebuild-default",
+				"$sweetpad-xcbeautify-errors",
+				"$sweetpad-xcbeautify-warnings"
 			],
-			"cwd": "/Users/jordan/Files/Development/Trivial",
-			"disableTaskQueue": true,
+			"label": "Build",
 			"group": {
 				"kind": "build",
-				"isDefault": false
-			},
-			"label": "Trivial"
-		},
-		{
-			"type": "swift",
-			"args": [
-				"build",
-				"--build-tests",
-				"-Xswiftc",
-				"-diagnostic-style=swift"
-			],
-			"cwd": "/Users/jordan/Files/Development/Trivial/Submodules/TrivialService",
-			"disableTaskQueue": true,
-			"group": {
-				"kind": "build",
-				"isDefault": false
-			},
-			"label": "TrivialService"
-		},
-		{
-			"type": "swift",
-			"args": [
-				"build",
-				"--build-tests",
-				"-Xswiftc",
-				"-diagnostic-style=swift"
-			],
-			"cwd": "/Users/jordan/Files/Development/Trivial/Submodules/TrivialAPI",
-			"disableTaskQueue": true,
-			"group": {
-				"kind": "build",
-				"isDefault": false
-			},
-			"label": "TrivialAPI"
+				"isDefault": true
+			}
 		}
 	]
 }
