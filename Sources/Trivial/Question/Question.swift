@@ -6,5 +6,5 @@ import MemberwiseInit
 public struct Question: Equatable, Sendable {
 	public let prompt: String
 	public let questionType: QuestionType
-    public let difficulty: Difficulty
+	public let difficulty: Difficulty
 }
