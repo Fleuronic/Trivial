@@ -15,7 +15,7 @@ let package = Package(
 			targets: ["Trivial"]
 		),
 	],
-	dependencies: [.package(url: "https://github.com/gohanlon/swift-memberwise-init-macro", from: "0.5.0"),],
+	dependencies: [.package(url: "https://github.com/gohanlon/swift-memberwise-init-macro", from: "0.5.2"),],
 	targets: [
 		.target(
 			name: "Trivial",
@@ -28,7 +28,6 @@ let package = Package(
 for target in package.targets {
 	target.swiftSettings = [
 		.enableExperimentalFeature("StrictConcurrency"),
-		.enableUpcomingFeature("ExistentialAny"),
-		.enableUpcomingFeature("InternalImportsByDefault")
+		.enableUpcomingFeature("ExistentialAny")
 	]
 }
